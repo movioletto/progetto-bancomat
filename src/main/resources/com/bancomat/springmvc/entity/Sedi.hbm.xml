@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 7-nov-2016 12.41.10 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="bancomat" name="com.bancomat.springmvc.entity.Sedi" optimistic-lock="version" table="sedi">
+    <id name="idSede" type="int">
+      <column name="idSede"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="indirizzo" type="string">
+      <column length="50" name="indirizzo" not-null="true"/>
+    </property>
+    <property name="telefono" type="string">
+      <column length="10" name="telefono" not-null="true"/>
+    </property>
+    <property name="mail" type="string">
+      <column length="50" name="mail" not-null="true"/>
+    </property>
+    <property name="idCitta" type="string">
+      <column length="2" name="idCitta" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>

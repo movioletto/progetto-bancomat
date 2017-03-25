@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 7-nov-2016 12.41.10 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="bancomat" name="com.bancomat.springmvc.entity.Utente" optimistic-lock="version" table="utente">
+    <id name="idUtente" type="int">
+      <column name="idUtente"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="nome" type="string">
+      <column length="50" name="nome" not-null="true"/>
+    </property>
+    <property name="cognome" type="string">
+      <column length="50" name="cognome" not-null="true"/>
+    </property>
+    <property name="pin" type="int">
+      <column name="pin" not-null="true"/>
+    </property>
+    <property name="saldo" type="double">
+      <column name="saldo" not-null="true" precision="22" scale="0"/>
+    </property>
+  </class>
+</hibernate-mapping>
